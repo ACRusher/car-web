@@ -1,0 +1,26 @@
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" type="text/css" href="/static/css/common.css"/>
+    <script src="/static/js/jQuery-1.6.min.js"></script>
+    <script src="/static/js/source-analyze.js"></script>
+    <title>发表文章</title>
+</head>
+<body>
+<div style="margin: 0 auto;width: 80%;height: auto;padding: 30px;border: 1px solid;">
+<label>java源代码</label><br/>
+    <center>
+<textarea id="content" style="width: 75%;height: 60%;background-color: ghostwhite;color:green;margin: auto;" >
+
+</textarea></center>
+<br/>
+<button id="analyze">生成html代码</button>
+<br/>
+<hr/>
+    <center>
+<textarea id="htmlCode" style="width: 75%;height: 40%;background-color: ghostwhite;margin: 0 auto;" ></textarea>
+    </center>
+</div>
+</body>
+
+</html>

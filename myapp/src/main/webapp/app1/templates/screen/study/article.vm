@@ -1,0 +1,13 @@
+<html>
+<head>
+    <title> 文章详情 </title>
+    <script src="/static/js/jQuery-1.6.min.js"></script>
+    <script src="/static/js/article-detail.js"></script>
+    <script src="/static/js/parse-script.js"></script>
+</head>
+<body background="/static/images/paper.jpg">
+<div id="content">
+
+</div>
+</body>
+</html>

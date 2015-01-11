@@ -1,0 +1,47 @@
+<html>
+<head>
+    <title>SqlMapClient创建方法</title>
+    <link rel="stylesheet" type="text/css" href="/static/css/common.css" />
+</head>
+<body>
+<p>
+    首先可以按照官方创建方式创建，<br/>
+    <textarea datatype="" class="textArea" style="">
+        Reader reader= Resources.getResourceAsReader("sqlmapconfig.xml");
+        SqlMapClient smc= SqlMapClientBuilder.buildSqlMapClient(reader);
+    </textarea>
+    <br/>
+    详情亲查看链接：<a href="http://www.tutorialspoint.com/ibatis/ibatis_quick_guide.htm">IBATIS快速上手</a>
+    <br/>
+    另外可以采用spring提供的工厂bean:
+    <br/>
+    <textarea class="textArea">
+    <code>
+        <bean id="sqlMapClient" class="org.springframework.orm.ibatis.SqlMapClientFactoryBean">
+            <property name="configLocation" value="classpath:sqlmapconfig.xml" />
+        </bean>
+
+    </code>
+    </textarea>
+    <br/>
+    使用工厂bean的好处是可以自己配备dataSource：
+    <br/>
+    <textarea class="textArea">
+    <bean id="sqlClient" class="org.springframework.orm.ibatis.SqlMapClientFactoryBean">
+        <property name="configLocation" value="classpath:sqlmapconfig.xml" />
+        <property name="dataSource" ref="myDatasource"/>
+    </bean>
+    </textarea>
+    <div id="">
+    <script>
+        function f(){
+            alert('successz22!');
+        }
+
+    </script>
+    <button onclick="f()">click me !!/button>
+    </div>
+</p>
+<hr/>
+</body>
+</html>

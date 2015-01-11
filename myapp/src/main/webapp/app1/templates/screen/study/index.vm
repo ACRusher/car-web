@@ -1,0 +1,53 @@
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" type="text/css" href="/static/css/common.css"/>
+    <script src="/static/js/jQuery-1.6.min.js"></script>
+    <script src="/static/js/article-index.js"></script>
+    <title>文章列表</title>
+    <style>
+        div {
+            margin: 0px;
+            padding: 0px;
+            font-family: "微软雅黑", "黑体", "宋体" ;
+            font-size: 18px;
+            height: 30px;
+        }
+    </style>
+</head>
+<body style="background-color: #E7EAEB; " background="/static/images/artitle.jpg">
+<div id="list" style="height: 80%;width: 70%;padding-top: 50px;">
+    <div id="item" style="height: 30px;font-size: 20px;color: green;font-weight: 30;">
+        <div style="border-style:none solid none none; border-width: thin;width: 60%;float: left;text-align: center">
+            标题
+        </div>
+        <div style="border-style:none solid none none; border-width: thin;width: 19%;float: left;text-align: center">
+            发表时间
+        </div>
+        <div style="width: 19%;float: right;text-align: center">阅读次数</div>
+    </div>
+
+##    <div style="height: 30px;text-align: center">
+##        <div style="width: 60%;float: left;"><a href="/life/heart.vm"> 测试文章标题</a></div>
+##        <div style="width: 19%;float: left;font-size: 15px;">2014-10-10 10:11</div>
+##        <div style="width:19%;float: left;font-size: 15px;">20</div>
+##    </div>
+</div>
+##<hr/>
+<div id="navigator" style="padding-left: 200px;height: 30px;width: 50%;font-family:"微软雅黑", "黑体", "宋体" ; >
+    <button id="firstPage">首页</button>
+    <button id="prePage">上一页</button>
+        <span>
+        <small>1 ..</small> <label id="curPage" style="color: green;font-weight: 20;">1</label> ..
+        <small id="totalPage">
+            100
+        </small>
+        </span>
+    <button id="nextPage">下一页</button>
+    <button id="lastPage">尾页</button>
+</div>
+<div id="" style="padding-left: 200px;width: 100px;float: right;color: green;font-family:"微软雅黑", "黑体", "宋体"; />
+    <a href="upload.vm">上传文章</a>
+</div>
+</body>
+</html>

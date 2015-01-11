@@ -1,0 +1,30 @@
+<html>
+<head>
+##    <link rel="stylesheet" type="text/css" href="/static/css/sign.css"/>
+    <script src="/static/js/jQuery-1.6.min.js"></script>
+    <script src="/static/js/sign.js"></script>
+    <title>卡券包控制台</title>
+</head>
+<body style="background-color: whitesmoke">
+<h1 class="big" style="color: red;text-align: center">内部使用</h1>
+
+<a>
+    <div style="width:80%;height: 500px;margin:0 auto;border:1px solid;text-align:center;background-color:#CCCCCC;border-radius:20px;">
+        <h4>根据昵称查询淘宝账号</h4>
+        <hr/>
+        <span>昵称：</span>
+        <input id="nick" type="text" style="color: grey;width: 120px;height: 30px;background:whitesmoke;border: solid;border-width: 2px;"></input>
+        &nbsp;&nbsp;
+        <span>查询密码：</span>
+        <input id="code" type="text" style="color: grey;width: 120px;height: 30px;background:whitesmoke;border: solid;border-width: 2px;"></input>
+        &nbsp;&nbsp;&nbsp;&nbsp;
+        <button id="queryTbid" style="width: 100px;height: 30px;border: solid;border-width: 2px;border-color: grey;font-weight: bold;background-color: #7fb80e">查询</button>
+        <br/>
+        <br/>
+        <textarea id="tbid" style="width: 80%;height: 300px;color: green;background :whitesmoke;padding: 10px 100px;font-weight: bold;line-height: 20px;letter-spacing: 0.5px;"></textarea>
+    </div>
+</a>
+
+
+</body>
+</html>

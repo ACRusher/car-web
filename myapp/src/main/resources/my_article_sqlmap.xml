@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sqlMap
+        PUBLIC "-//ibatis.apache.org//DTD SQL Map 2.0//EN"
+        "http://ibatis.apache.org/dtd/sql-map-2.dtd">
+
+<sqlMap namespace="my_article">
+    <typeAlias alias="Article" type="com.hangzhou.life.app1.module.common.dto.Article"/>
+    <select id="getArticleByPage" parameterClass="Map" resultClass="Article">
+        SELECT * FROM my_article
+        order by gmt_created desc
+        limit #start#, #size#
+    </select>
+    <select id="getArticleDetail" parameterClass="Long" resultClass="Article">
+        select * from  my_article
+        where id = #id#
+        limit 1
+    </select>
+    <select id="getTotalCnt" resultClass="Integer">
+        select count(*) from my_article
+    </select>
+    <insert id="insert" parameterClass="Article">
+        insert into my_article values (
+        null,
+        now(),
+        now(),
+        #title#,
+        #content#,
+        0,
+        null
+        )
+        <selectKey keyProperty="id" resultClass="Long">
+            select last_insert_id() as id limit 1
+        </selectKey>
+    </insert>
+
+    <update id="updateVisited" parameterClass="Map">
+        update my_article
+        set visited = #visited#
+        where id = #id#
+    </update>
+
+</sqlMap>

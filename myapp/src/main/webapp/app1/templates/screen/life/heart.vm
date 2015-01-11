@@ -1,0 +1,29 @@
+<html>
+<head>
+    <title>心情日记</title>
+    <link rel="stylesheet" type="text/css" href="/static/css/common.css" />
+</head>
+<body>
+<center>
+<h1>冬至吃饺子</h1>
+<p class="emphasize">
+    冬至到了
+    <br/>
+    朋友说要吃饺子
+    <br/>
+    等我调完这个bug
+    <br/>
+    我打算去买速冻饺子
+    <br/>
+    可是
+    <br/>
+    等我调完
+    <br/>
+    已经11点
+    <br/>
+    超市关门了
+
+</p>
+</center>
+</body>
+</html>
